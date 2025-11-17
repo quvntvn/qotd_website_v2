@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation du jour</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+    <h1 class="title">Citation du jour</h1>
+</div>
+
+    <div class="card" id="quoteCard">
+        <p id="quoteText">...</p>
+        <hr>
+        <p id="quoteAuthor" class="author"></p>
+        <p id="quoteYear" class="year"></p>
+    </div>
+
+    <button class="btn" id="btnToday">CITATION DU JOUR</button>
+    <button class="btn" id="btnRandom">CITATION ALÉATOIRE</button>
+    <button class="btn settings" id="btnSettings">⚙️</button>
+</div>
+
+<div id="settingsModal" class="modal hidden">
+    <div class="modal-content">
+        <h2>Réglages</h2>
+
+        <label>
+            <span>Notifications activées</span>
+            <input type="checkbox" id="notifToggle">
+        </label>
+
+        <label>Heure de notification</label>
+        <input type="time" id="notifTime">
+
+        <label>Langue</label>
+        <select id="langSelect">
+            <option value="fr">Français</option>
+            <option value="en">Anglais</option>
+        </select>
+
+        <button class="btn" id="btnSave">Enregistrer</button>
+        <button class="btn" id="btnClose">Retour</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
